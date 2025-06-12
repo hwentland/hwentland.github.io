@@ -49,11 +49,11 @@ Information about the previous years can be found at
 | 08:30 - 09:00 | Reception & Breakfast                        |              |
 | 09:00 - 09:30 | Welcome (AMD Exec & Intro)                   |              |
 | 09:30 - 10:00 | Agenda & Topics Intro                        |              |
-| 10:00 - 11:00 | ACS - MPO, HDR, and Freesync                 |              |
+| 10:00 - 11:00 | ACS - MPO, HDR, and Freesync                 | Shashank Sharma |
 | 11:00 - 11:20 | Break                                        |              |
 | 11:20 - 12:50 | Commit Failure Feedback                      |              |
 | 12:50 - 13:50 | Lunch                                        |              |
-| 13:50 - 14:50 | VRR for Desktop Use-Cases                    |              |
+| 13:50 - 14:50 | Async pageflip failures                      | Melissa Wen |
 | 15:30 - 15:50 | Break                                        |              |
 | 15:50 - 16:50 | Backlight Improvements                       |              |
 | 16:50 - 17:50 | DP Aux Improvements                          |              |
@@ -67,12 +67,12 @@ Information about the previous years can be found at
 | 10:30 - 10:50 | Break                                        |              |
 | 10:50 - 12:50 | Color & HDR Forum                            |              |
 | 12:50 - 13:50 | Lunch                                        |              |
-| 13:50 - 14:50 | Color & HDR – DRM/KMS                        |              |
+| 13:50 - 14:50 | Color & HDR – DRM/KMS                        | Alex Hung |
 | 14:50 - 15:10 | Break                                        |              |
 | 15:10 - 16:40 | Color & HDR – Compositors & applications     |              |
 | 16:40 - 15:00 | Break                                        |              |
-| 15:00 - 16:00 | CI, DRM CI, IGT                              |              |
-| 16:00 - 17:00 | Desktop Testing Framework                    |              |
+| 15:00 - 16:00 | CI, DRM CI, IGT                              | Melissa Wen,<br>Louis Chauvet |
+| 16:00 - 17:00 | Desktop Testing Framework                    | Leo Li |
 
 ### Day 3 - Thursday, July 10
 
@@ -82,7 +82,7 @@ Information about the previous years can be found at
 | 09:30 - 11:00 | Real-time Scheduling                         |              |
 | 11:00 - 11:20 | Break                                        |              |
 | 11:20 - 12:05 | Per-CRTC page-flip event requests            |              |
-| 12:05 - 12:50 | Async pageflip failures                      |              |
+| 12:05 - 12:50 | VRR for Desktop Use-Cases                    | Leo Li |
 | 12:50 - 13:50 | Lunch                                        |              |
 | 13:50 - 15:50 | Open Session                                 |              |
 | 15:30 - 16:30 | Wrap-Up                                      |              |
