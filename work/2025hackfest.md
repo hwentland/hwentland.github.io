@@ -70,9 +70,8 @@ Information about the previous years can be found at
 | 13:50 - 14:50 | Color & HDR – DRM/KMS                        | Alex Hung |
 | 14:50 - 15:10 | Break                                        |              |
 | 15:10 - 16:40 | Color & HDR – Compositors & applications     |              |
-| 16:40 - 15:00 | Break                                        |              |
-| 15:00 - 16:00 | CI, DRM CI, IGT                              | Melissa Wen,<br>Louis Chauvet |
-| 16:00 - 17:00 | Desktop Testing Framework                    | Leo Li |
+| 16:40 - 17:00 | Break                                        |              |
+| 17:00 - 18:00 | CI, DRM CI, IGT                              | Melissa Wen,<br>Louis Chauvet |
 
 ### Day 3 - Thursday, July 10
 
@@ -84,7 +83,8 @@ Information about the previous years can be found at
 | 11:20 - 12:05 | Per-CRTC page-flip event requests            |              |
 | 12:05 - 12:50 | VRR for Desktop Use-Cases                    | Leo Li |
 | 12:50 - 13:50 | Lunch                                        |              |
-| 13:50 - 15:50 | Open Session                                 |              |
+| 13:50 - 14:50 | Desktop Testing Framework                    | Leo Li |
+| 14:50 - 15:50 | Open Session                                 |              |
 | 15:30 - 16:30 | Wrap-Up                                      |              |
 
 
