@@ -55,8 +55,8 @@ Information about the previous years can be found at
 | 12:50 - 13:50 | Lunch                                        |              |
 | 13:50 - 14:50 | Async pageflip failures                      | Melissa Wen |
 | 15:30 - 15:50 | Break                                        |              |
-| 15:50 - 16:50 | Backlight Improvements                       |              |
-| 16:50 - 17:50 | DP Aux Improvements                          |              |
+| 15:50 - 16:50 | Backlight Improvements                       | Mario Limonciello |
+| 16:50 - 17:50 | DP Aux Improvements                          | Sean Paul |
 
 ### Day 2 - Wednesday, July 9
 
