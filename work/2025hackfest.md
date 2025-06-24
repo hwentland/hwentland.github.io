@@ -65,7 +65,7 @@ Information about the previous years can be found at
 | 09:00 - 09:30 | Recap & Planning                             |              |
 | 09:30 - 10:30 | Color & HDR Status                           |              |
 | 10:30 - 10:50 | Break                                        |              |
-| 10:50 - 12:50 | Color & HDR Forum                            |              |
+| 10:50 - 12:50 | Color & HDR Q&A                              | **Moderation**: Harry Wentland<br>**Experts**: Dr. Charles Poynton, Keith Lee |
 | 12:50 - 13:50 | Lunch                                        |              |
 | 13:50 - 14:50 | Color & HDR – DRM/KMS                        | Alex Hung |
 | 14:50 - 15:10 | Break                                        |              |
