@@ -47,11 +47,11 @@ Information about the previous years can be found at
 | Time          | Topic                                        | Topic Lead   |
 | ------------- | -------------------------------------------- | -------------|
 | 08:30 - 09:00 | Reception & Breakfast                        |              |
-| 09:00 - 09:30 | Welcome (AMD Exec & Intro)                   |              |
+| 09:00 - 09:30 | Welcome (AMD Exec & Intro)                   | Syed Hussain |
 | 09:30 - 10:00 | Agenda & Topics Intro                        |              |
 | 10:00 - 11:00 | ACS - MPO, HDR, and Freesync                 | Shashank Sharma |
 | 11:00 - 11:20 | Break                                        |              |
-| 11:20 - 12:50 | Commit Failure Feedback                      |              |
+| 11:20 - 12:50 | Commit Failure Feedback                      |  |
 | 12:50 - 13:50 | Lunch                                        |              |
 | 13:50 - 14:50 | Async pageflip failures                      | Melissa Wen |
 | 15:30 - 15:50 | Break                                        |              |
@@ -63,13 +63,13 @@ Information about the previous years can be found at
 | Time          | Topic                                        | Topic Lead   |
 | ------------- | -------------------------------------------- | -------------|
 | 09:00 - 09:30 | Recap & Planning                             |              |
-| 09:30 - 10:30 | Color & HDR Status                           |              |
+| 09:30 - 10:30 | Color & HDR Status                           |  |
 | 10:30 - 10:50 | Break                                        |              |
 | 10:50 - 12:50 | Color & HDR Q&A                              | **Moderation**: Harry Wentland<br>**Experts**: Dr. Charles Poynton, Keith Lee |
 | 12:50 - 13:50 | Lunch                                        |              |
 | 13:50 - 14:50 | Color & HDR – DRM/KMS                        | Alex Hung |
 | 14:50 - 15:10 | Break                                        |              |
-| 15:10 - 16:40 | Color & HDR – Compositors & applications     |              |
+| 15:10 - 16:40 | Color & HDR – Compositors & applications     |  |
 | 16:40 - 17:00 | Break                                        |              |
 | 17:00 - 18:00 | CI, DRM CI, IGT                              | Melissa Wen,<br>Louis Chauvet |
 
