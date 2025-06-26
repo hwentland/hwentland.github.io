@@ -84,7 +84,7 @@ Information about the previous years can be found at
 | 12:05 - 12:50 | VRR for Desktop Use-Cases                    | Leo Li |
 | 12:50 - 13:50 | Lunch                                        |              |
 | 13:50 - 14:50 | Desktop Testing Framework                    | Leo Li |
-| 14:50 - 15:50 | Open Session                                 |              |
+| 14:50 - 15:50 | Open Session<br>___Slow Atomic Check                                 |              |
 | 15:30 - 16:30 | Wrap-Up                                      |              |
 
 
