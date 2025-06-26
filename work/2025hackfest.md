@@ -47,7 +47,7 @@ Information about the previous years can be found at
 | Time          | Topic                                        | Topic Lead   |
 | ------------- | -------------------------------------------- | -------------|
 | 08:30 - 09:00 | Reception & Breakfast                        |              |
-| 09:00 - 09:30 | Welcome (AMD Exec & Intro)                   | Syed Hussain |
+| 09:00 - 09:30 | Welcome (AMD Exec & Intro)                   | Syed Hussain,<br>Chris Smith |
 | 09:30 - 10:00 | Agenda & Topics Intro                        |              |
 | 10:00 - 11:00 | ACS - MPO, HDR, and Freesync                 | Shashank Sharma |
 | 11:00 - 11:20 | Break                                        |              |
