@@ -80,7 +80,7 @@ Information about the previous years can be found at
 | 09:00 - 09:30 | Recap & Planning                             |              |
 | 09:30 - 11:00 | Real-time Scheduling                         | Xaver Hugl |
 | 11:00 - 11:20 | Break                                        |              |
-| 11:20 - 12:05 | Per-CRTC page-flip event requests            |              |
+| 11:20 - 12:05 | Per-CRTC page-flip event requests            | Simon Ser |
 | 12:05 - 12:50 | VRR for Desktop Use-Cases                    | Leo Li |
 | 12:50 - 13:50 | Lunch                                        |              |
 | 13:50 - 14:50 | Desktop Testing Framework                    | Leo Li |
