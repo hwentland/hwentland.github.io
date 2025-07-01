@@ -57,6 +57,8 @@ Information about the previous years can be found at
 | 15:30 - 15:50 | Break                                        |              |
 | 15:50 - 16:50 | Backlight Improvements                       | Mario Limonciello |
 | 16:50 - 17:50 | DP Aux Improvements                          | Sean Paul |
+| 18:30 - 21:00 | AMD sponsored dinner |  |
+
 
 ### Day 2 - Wednesday, July 9
 
@@ -86,6 +88,7 @@ Information about the previous years can be found at
 | 13:50 - 14:50 | Desktop Testing Framework                    | Leo Li |
 | 14:50 - 15:50 | Open Session<br>___Slow Atomic Check                                 |              |
 | 15:30 - 16:30 | Wrap-Up                                      |              |
+| 18:30 - 20:30 | Sponsored event | |
 
 
 ## Agenda
