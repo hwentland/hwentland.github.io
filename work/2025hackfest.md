@@ -152,6 +152,17 @@ Punch the address below into your SatNav and go. Select "Avoid Tolls" and avoid 
 Markham ON  
 Canada  
 
+### Arriving at AMD
+
+Enter through the double doors, and go directly to the security desk. Present your ID to get your visitor's badge.
+
+![](2025-07-07-11-13-57.png)
+
+Once you have your badge, go through the gates and down the hall, into the lobby. The IT training room will be on your left.
+
+![](2025-07-07-11-13-26.png)
+![](2025-07-07-11-13-34.png)
+
 ## Code of Conduct
 
 The code of conduct for the conference will be the [Contributor Covenant Code of Conduct v2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
