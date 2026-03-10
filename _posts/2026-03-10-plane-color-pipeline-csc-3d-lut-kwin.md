@@ -127,3 +127,5 @@ The KWin code requires feedback from maintainers. I expect it will need more wor
 This also needs more testing. At times I see the 3D LUT fail to apply. I'm not sure whether this is a problem with my kwin code or amdgpu.
 
 I don't see offload candidate surfaces from many applications where I'd expect to see them. This needs further analysis. For one, I'm unsure what happens with games. The other thing is Youtube in Firefox, which fails to present the video as an offload surface. Some other videos work fine in Firefox, in particular local video playback.
+
+*sneaky edit*: and power measurements, of course, since that's the entire reason for this.
