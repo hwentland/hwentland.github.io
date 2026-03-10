@@ -1,4 +1,10 @@
-[Plane Color Pipeline, CSC, 3D LUT, and KWin](work/2026_csc/2026-03-color-pipeline.md)
+# Harry's Blog
+
+Visit the blog: https://hwentlan.github.io/
+
+Subscribe via RSS: https://hwentlan.github.io/feed.xml
+
+## Misc
 
 [2025 Display Next Hackfest Notes](work/2025hackfest-notes.md)
 

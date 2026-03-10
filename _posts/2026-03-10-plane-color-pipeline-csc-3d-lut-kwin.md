@@ -1,4 +1,8 @@
-# Plane Color Pipeline, CSC, 3D LUT, and KWin
+---
+layout: post
+title: "Plane Color Pipeline, CSC, 3D LUT, and KWin"
+date: 2026-03-10
+---
 
 A wild blog appears...
 
@@ -8,7 +12,7 @@ A couple months ago the [DRM/KMS Plane Color Pipeline API](https://patchwork.fre
 
 On AMD HW with a kernel that includes the new Color Pipeline API KWin enables HW composition for surfaces that update more than 20 times per second on a single enabled display. It needs a few other things to match as well. In particular, this means that running `mpv` with the default backend (`--vo=gpu`) will use HW composition for `mpv`'s video surface with the rest of the desktop. The easiest way to observe this is with [UMR](https://gitlab.freedesktop.org/tomstdenis/umr) by running it in `--gui` mode and looking at the `KMS` tab.
 
-![UMR's KMS pane showing 4 planes](Screenshot_20260303_163142.png)
+![UMR's KMS pane showing 4 planes](/assets/images/Screenshot_20260303_163142.png)
 
 In my examples UMR also gets HW composed, so this shows 4 planes:
 - 1920x1200 desktop plane - XR24
@@ -26,39 +30,39 @@ When we do this we don't see a HW-composed plane in `umr`. `KWin` color-space co
 
 So I went and implemented a CSC `drm_colorop`, added IGT tests and added support for it in `kwin`.
 
-Kernel Patches: https://gitlab.freedesktop.org/hwentland/linux/-/commits/csc-colorop
+[Kernel Patches](https://gitlab.freedesktop.org/hwentland/linux/-/commits/csc-colorop)
 
-IGT Patches:https://gitlab.freedesktop.org/hwentland/igt-gpu-tools/-/commits/csc-colorop
+[IGT Patches](https://gitlab.freedesktop.org/hwentland/igt-gpu-tools/-/commits/csc-colorop)
 
-KWin Patches: https://invent.kde.org/hwentlan/kwin/-/tree/csc
+[KWin Patches](https://invent.kde.org/hwentlan/kwin/-/tree/csc)
 
 With this new CSC colorop we now see an NV12 buffer for our SDR video (I'm using a 1080p60 Big Buck Bunny clip).
 
-![UMR's KMS pane showing 4 planes, one is NV12](Screenshot_20260303_170025.png)
+![UMR's KMS pane showing 4 planes, one is NV12](/assets/images/Screenshot_20260303_170025.png)
 
 ## Banding and 3DLUTs
 
 Unfortunately we see some banding during the HW composed Big Buck Bunny playback:
 
-![Big Buck Bunny HW composed with banding](bbb_hw_composed.jpg)
+![Big Buck Bunny HW composed with banding](/assets/images/bbb_hw_composed.jpg)
 
 This is the SW composed version, showing no problems:
 
-![Big Buck Bunny SW composed](bbb_sw_composed.jpg)
+![Big Buck Bunny SW composed](/assets/images/bbb_sw_composed.jpg)
 
 I haven't yet debugged the banding. It seems to happen with one of the 1D LUTs.
 
 But the AMD HW also has a 3D LUT and `kwin` lets us sample its entire internal color pipeline, so we can simply sample it at our 3DLUT coordinates and program it to HW. This allows us to represent any complex color pipeline with a single 3D LUT operation. The result is this.
 
-![Big Buck Bunny HW composed with 3DLUT](bbb_3dlut_hw.jpg)
+![Big Buck Bunny HW composed with 3DLUT](/assets/images/bbb_3dlut_hw.jpg)
 
-kwin branch: https://invent.kde.org/hwentlan/kwin/-/tree/csc-3dlut
+[kwin branch](https://invent.kde.org/hwentlan/kwin/-/tree/csc-3dlut)
 
 ## HDR Video
 
 In order to compose HDR content `kwin` creates a tone-mapper. By packing the entire color pipeline into a 3D LUT we don't need to worry about it and get support for HW composition of HDR content for free.
 
-![UMR's KMS pane showing 4 planes, one is P010](Screenshot_20260304_105706.png)
+![UMR's KMS pane showing 4 planes, one is P010](/assets/images/Screenshot_20260304_105706.png)
 
 **Note:** AMD's 3D LUT uses 17 entries per dimension and interpolates tetrahedrally. This will give good results when applied in non-linear luminance space. KWin blends in non-linear space, and the input buffer is non-linear, so it works well here. While this gives good results you might still observe minor differences, especially in brighter areas of the image. This can be observed when toggling between HW and SW composition in certain scenes.
 
@@ -68,11 +72,11 @@ Because AMD's DCN HW uses a multi-tap scaler filter but kwin's SW composition us
 
 SW composed:
 
-![SW composed 4-to-1 downscaled](hdr_sw_composed.jpg)
+![SW composed 4-to-1 downscaled](/assets/images/hdr_sw_composed.jpg)
 
 HW composed:
 
-![HW composed 4-to-1 downscaled](hdr_hw_composed.jpg)
+![HW composed 4-to-1 downscaled](/assets/images/hdr_hw_composed.jpg)
 
 The former has stronger aliasing. The latter looks softer and more natural, in my opinion. The difference becomes much less pronounced when the image is downscaled less, e.g., from 4k to 1080p.
 
@@ -84,23 +88,23 @@ When I started this work I asked myself: How do I see whether a surface is a can
 
 To solve this I worked with Claude to create a plugin that marks surfaces and their offload status:
 
-![showoffload effect in kwin debug console](image_0007.jpg)
+![showoffload effect in kwin debug console](/assets/images/image_0007.jpg)
 
 It's quite useful to see immediately which surfaces are candidates, and why they might fail to offload.
 
 I've also added a new tab to dynamically toggle HW composition and and off. The screenshot shows toggles for 3D LUT and tone-mapping and while we can add those as well they don't always take effect as expected, so I left them out of the branch that's linked below. But the ability to toggle HW composition is quite powerful when debugging HW composition issues.
 
-![Offload Settings tab in kwin debug console](image_0008.jpg)
+![Offload Settings tab in kwin debug console](/assets/images/image_0008.jpg)
 
-kwin branch: https://invent.kde.org/hwentlan/kwin/-/tree/showoffload
+[kwin branch](https://invent.kde.org/hwentlan/kwin/-/tree/showoffload)
 
-kwin branch on top of csc-3dlut branch: https://invent.kde.org/hwentlan/kwin/-/tree/csc-3dlut-showoffload
+[kwin branch on top of csc-3dlut branch](https://invent.kde.org/hwentlan/kwin/-/tree/csc-3dlut-showoffload)
 
 ## UMR DCN tab
 
 DCN HW programming can be logged via the `amdgpu_dm_dtn_log` debug log debugfs. But that log is quite extensive. It can be useful to show this in UMR with auto-update functionality to see programmed settings immediately.
 
-![UMR DCN Tab](Screenshot_20260304_121331.png)
+![UMR DCN Tab](/assets/images/Screenshot_20260304_121331.png)
 
 The code still needs a fair bit of work as this was the first time I used Claude for something extensive like this. I plan to post it eventually.
 

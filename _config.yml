@@ -1,2 +1,11 @@
 # theme: jekyll-theme-minimal
 title: Harry's Blog
+description: Harry's technical blog about graphics, video, and Linux development
+url: "https://hwentlan.github.io"
+author: Harry Wentland
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
