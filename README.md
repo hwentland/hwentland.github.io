@@ -1,8 +1,8 @@
 # Harry's Blog
 
-Visit the blog: https://hwentlan.github.io/
+Visit the blog: https://hwentland.github.io/
 
-Subscribe via RSS: https://hwentlan.github.io/feed.xml
+Subscribe via RSS: https://hwentland.github.io/feed.xml
 
 ## Misc
 
